@@ -715,7 +715,7 @@ sub getCpuInfo {
                 $cpus->[$cpu]{'model'} = $model;
             } elsif ($field eq "bogomips" || $field eq "BogoMIPS") {
                 $cpus->[$cpu]{'bogo'} = $val;
-            } elsif ($field eq "flags") {
+            } elsif ($field eq "flags" || $field eq "Features") {
                 $cpus->[$cpu]{'flags'} = processCpuFlags($val);
             }
         }
