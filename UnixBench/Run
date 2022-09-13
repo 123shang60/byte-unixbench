@@ -124,7 +124,7 @@ my $fs = [
 ];
 
 my $oldsystem = [
-    "execl", "fstime", "fsbuffer", "fsdisk", "pipe", "context1", "spawn",
+    "execl", "pipe", "context1", "spawn",
     "syscall"
 ];
 
