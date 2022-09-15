@@ -133,7 +133,7 @@ my $system = [
 ];
 
 my $index = [
-   "dhry2reg", @arithmetic, @$oldsystem, "shell1", "shell8"
+   "dhry2reg", "whetstone-double", @$oldsystem, "shell1", "shell8"
 ];
 
 my $graphics = [
@@ -1900,7 +1900,7 @@ sub main {
     my @creatingDirectories = ( ${TMPDIR}, ${RESULTDIR} );
     createDirrectoriesIfNotExists(@creatingDirectories);
 
-    preChecks();
+    # preChecks();
     my $systemInfo = getSystemInfo();
 
     # If the number of copies to run was not set, set it to 1
