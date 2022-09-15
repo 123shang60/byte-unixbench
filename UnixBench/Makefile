@@ -110,7 +110,7 @@ else
         OPTON += -mcpu=native
     endif
     #http://stackoverflow.com/questions/9840207/how-to-use-avx-pclmulqdq-on-mac-os-x-lion/19342603#19342603
-    CFLAGS += -Wa,-q
+    #CFLAGS += -Wa,-q
   endif
 
 endif

@@ -133,7 +133,7 @@ my $system = [
 ];
 
 my $index = [
-   "dhry2reg", "whetstone-double", @$oldsystem, "shell1", "shell8"
+   "dhry2reg", @arithmetic, @$oldsystem, "shell1", "shell8"
 ];
 
 my $graphics = [

@@ -103,7 +103,7 @@ char	*argv[];
 				exit(1);
 			}
 			if ((ret = read(p2[0], (char *)&check, sizeof(check))) != sizeof(check)) {
-				if ((ret == 0)) { /* end-of-stream */
+				if (ret == 0) { /* end-of-stream */
 					alarm(0);
 					report(); /* does not return */
 				}
@@ -136,7 +136,7 @@ char	*argv[];
 		close(p1[1]); close(p2[0]);
 		while (1) {
 			if ((ret = read(p1[0], (char *)&check, sizeof(check))) != sizeof(check)) {
-				if ((ret == 0)) { /* end-of-stream */
+				if (ret == 0) { /* end-of-stream */
 					alarm(0);
 					report(); /* does not return */
 				}
